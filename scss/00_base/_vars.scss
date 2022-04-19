@@ -1,0 +1,73 @@
+/* Variablen
+-------------------------------------------------*/
+/* Farben */
+
+//$corp-farbe:;
+//$corp-farbe:#222222 !default;// heißt das immer diese Farbe für diese Variable zugewiesen bleibt
+$weiss: #fff;
+$schwarz: #000;
+
+/* Hintergrund */
+$bg-weiss: $weiss;
+$bg-schwarz: $schwarz;
+
+
+/*
+----------------- Border/Rahmen -----------------*/
+
+/*------ Border Colors ------*/
+//$border-corp-farbe: $corp-farbe;
+$border-schwarz: $schwarz;
+$border-weiss: $weiss;
+
+// @include border(); wählt $corp-bestimmte-farbe & 1px das vorgediniert ist
+// @include border($corp-neue-farbe, 1px);
+@mixin border($color: $corp-bestimmte-farbe, $width: 1px) {
+  border: {
+    width: $width;
+    style: solid;
+    color: $color;
+  }
+}
+
+/*
+--------------------- Fonts ---------------------*/
+$font-corp:'';
+$font-corp-heading: '';
+$font-corp-menu: '';
+
+
+
+/*
+------------------Media Querys ------------------*/
+
+$des-xl: 1400px;
+$des-l: 1200px;
+$des: 920px;
+$tab: 768px;
+$mob-samsung: 360px;
+$iphone: 375;
+
+// die mixins werden mit @include
+
+@mixin media-samsung() {
+  @media only screen and (min-width: $mob-samsung) { @content;}
+}
+@mixin media-iphone() {
+  @media only screen and (min-width: $iphone) { @content;}
+}
+
+@mixin media-tablet() {
+  @media only screen and (min-width: $tab) { @content;}
+}
+
+@mixin media-desktop() {
+  @media only screen and (min-width: $des) { @content;}
+}
+
+@mixin media-desktop-large() {
+  @media only screen and (min-width: $des-l) { @content;}
+}
+@mixin media-desktop-xl() {
+  @media only screen and (min-width: $des-xl) { @content;}
+}

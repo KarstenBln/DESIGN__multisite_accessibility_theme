@@ -1,0 +1,52 @@
+/*
+Theme Name: Beaver Builder Accessibility Child Theme
+Theme URI: http://www.wpbeaverbuilder.com
+Version: 1.0
+Description: An example child theme that can be used as a starting point for custom development.
+Author: The Beaver Builder Team
+Author URI: http://www.fastlinemedia.com
+template: bb-theme
+*/
+
+/* Add your custom styles here... */
+/*
+#############################################
+#      www.eniky.com Atomic SCSS            #
+#############################################
+*/
+
+/*base
+@import "00_base/";
+----------------------------*/
+@import "00_base/vars";
+@import "00_base/meine_mixins";
+@import "00_base/child-theme-style";
+
+/*atoms
+@import "01_atom/";
+----------------------------*/
+@import "01_atom/button";
+@import "01_atom/label";
+
+/*molecules
+@import "02_molecule/";
+----------------------------*/
+@import "02_molecule/buttongroup";
+
+/*organisms
+@import "03_organism/";
+----------------------------*/
+@import "03_organism/header";
+@import "03_organism/content";
+@import "03_organism/footer";
+
+/*templates
+@import "04_template/";
+----------------------------*/
+@import "04_template/categories";
+@import "04_template/single";
+
+/*pages
+@import "05_page/";
+----------------------------*/
+@import "05_page/home";
