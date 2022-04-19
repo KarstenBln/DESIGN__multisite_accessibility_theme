@@ -32,5 +32,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	astra_body_bottom();
 	wp_footer();
 ?>
+<script type="text/javascript">
+jQuery( '#fr_screenreader_play' ).click( function(){
+	 jQuery( '#fr_screenreader_stop' ).toggleClass('stop-icon-anzeigen');
+ });
+</script>
 	</body>
 </html>

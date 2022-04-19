@@ -2,7 +2,7 @@
 -------------------------------------------------*/
 #screenreader-header {
   height: 30px;
-  margin: 3px 0 0 15px;
+  margin: 3px 0 0 0;
 
   div#accessibility-links {
     background: transparent !important;
@@ -34,6 +34,26 @@
             display: none;
           }
         }
+        &#fr_screenreader_stop {
+          background: #fff;
+          position: relative;
+          z-index: 1;
+
+
+          &::after {
+            background: url("images/animated-gif.gif") no-repeat;
+            background-size: 28px;
+
+            content: "";
+            height: 28px;
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            width: 28px;
+            z-index: 2;
+          }
+        }
 
         &#fr_screenreader_font_decrease,
         &#fr_screenreader_font_family,
@@ -45,7 +65,7 @@
         &#fr_screenreader_highcontrast3,
         &#fr_screenreader_play,
         &#fr_screenreader_stop {
-          border: 2px solid #fff !important;
+          border: 1px solid #fff !important;
           border-radius: 50%;
           font-size: 0 !important;
           height: 30px!important;
@@ -68,8 +88,7 @@
       }
 
       #fr_screenreader_stop {
-        background: url("images/animated-gif.gif") no-repeat;
-        background-size: 30px;
+
       }
 
       #fr_screenreader_hideimages {
