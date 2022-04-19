@@ -1,12 +1,16 @@
 /*
-Theme Name: Beaver Builder Accessibility Child Theme
-Theme URI: http://www.wpbeaverbuilder.com
-Version: 1.0
-Description: An example child theme that can be used as a starting point for custom development.
-Author: The Beaver Builder Team
-Author URI: http://www.fastlinemedia.com
-template: bb-theme
-*/
+ Theme Name:   Accessibility
+ Theme URI:
+ Description:
+ Author:       Karsten Wachholz
+ Author URI:   https://www.eniky.com
+ Template:     astra
+ Version:      1.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+
+ /* == Add your own styles below this line ==
+--------------------------------------------*/
 
 /* Add your custom styles here... */
 /*
@@ -31,6 +35,7 @@ template: bb-theme
 /*molecules
 @import "02_molecule/";
 ----------------------------*/
+@import "02_molecule/accessibility-icons";
 @import "02_molecule/buttongroup";
 
 /*organisms
