@@ -1,0 +1,88 @@
+/* Icons Header
+-------------------------------------------------*/
+
+#screenreader-header {
+  height: 30px;
+  margin: 3px 0 0 15px;
+
+  div#accessibility-links {
+    background: transparent !important;
+    border: 0;
+
+
+
+    div#tts_message {
+      display: none;
+    }
+    #speaker_plugin {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+    button {
+      &#fr_screenreader_font_decrease,
+      &#fr_screenreader_font_family,
+      &#fr_screenreader_font_increase,
+      &#fr_screenreader_font_reset,
+      &#fr_screenreader_highcontrast {
+        border-bottom: 0 !important;
+        font-size: 0 !important;
+        height: 30px!important;
+        padding: 0 !important;
+        width: 30px!important;
+        margin-right: 2px !important;
+        background-position: center center;
+
+        &:focus {
+          outline: 2px solid #f99b1c !important;
+        }
+      }
+    }
+
+    #fr_screenreader_font_increase {
+      background: url("../images/increase_designenergie.png") no-repeat;
+      background-size: 25px;
+    }
+
+    #fr_screenreader_font_decrease {
+      background: url("../images/decrease_designenergie.png") no-repeat;
+      background-size: 25px;
+    }
+
+    #fr_screenreader_font_reset {
+      background: url("../images/reset_designenergie.png") no-repeat;
+      background-size: 25px;
+    }
+
+    #fr_screenreader_font_family {
+      background: url("../images/dyslexic_designenergie.png") no-repeat;
+      background-size: 25px;
+
+      &:focus {
+        outline: 2px solid #f99b1c !important;
+      }
+    }
+
+    #fr_screenreader_highcontrast {
+      background: url("../images/highcontrast_designenergie.png") no-repeat;
+      background-size: 25px;
+
+
+    }
+
+    #fr_screenreader_highcontrast2 {
+      background: url("../images/highcontrast2_designenergie.png") no-repeat;
+      background-size: 25px;
+
+    }
+
+    #fr_screenreader_highcontrast3 {
+      background: url("../images/highcontrast3_designenergie.png") no-repeat;
+      background-size: 25px;
+
+    }
+    }
+  }
+}
