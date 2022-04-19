@@ -33,9 +33,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	wp_footer();
 ?>
 <script type="text/javascript">
-jQuery( '#fr_screenreader_play' ).click( function(){
-	 jQuery( '#fr_screenreader_stop' ).toggleClass('stop-icon-anzeigen');
- });
+
+	jQuery(document).ready(function() {
+		jQuery('body').on('click', '#fr_screenreader_play', function () {
+			jQuery( '#fr_screenreader_stop' ).toggleClass('stop-icon-anzeigen');
+		 });
+	});
+	
 </script>
 	</body>
 </html>
