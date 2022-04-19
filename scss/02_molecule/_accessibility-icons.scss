@@ -28,16 +28,21 @@
         }
 
         &#fr_screenreader_play {
-
-
+          margin-left: 0px;
           &.active {
             display: none;
           }
         }
         &#fr_screenreader_stop {
           background: #fff;
+          display: none;
           position: relative;
           z-index: 1;
+
+          &.stop-icon-anzeigen {
+            display: block;
+            margin-left: 0px;
+          }
 
 
           &::after {

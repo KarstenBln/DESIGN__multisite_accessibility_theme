@@ -38,8 +38,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 		jQuery('body').on('click', '#fr_screenreader_play', function () {
 			jQuery( '#fr_screenreader_stop' ).toggleClass('stop-icon-anzeigen');
 		 });
+		 jQuery('body').on('click', '#fr_screenreader_stop', function () {
+ 			jQuery( '#fr_screenreader_stop' ).toggleClass('stop-icon-anzeigen');
+ 		 });
 	});
-	
+
 </script>
 	</body>
 </html>
