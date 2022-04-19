@@ -1,6 +1,5 @@
 /* Icons Header
 -------------------------------------------------*/
-
 #screenreader-header {
   height: 30px;
   margin: 3px 0 0 15px;
@@ -8,81 +7,115 @@
   div#accessibility-links {
     background: transparent !important;
     border: 0;
+    display: block !important;
 
-
-
-    div#tts_message {
-      display: none;
+    div#text_plugin,
+    div#tts_message,
+    div#volume_plugin {
+      display: none !important;
     }
+
     #speaker_plugin {
       display: -webkit-flex;
       display: -ms-flex;
-      display: flex;
+      display: flex !important;
       align-items: center;
       height: 100%;
 
-    button {
-      &#fr_screenreader_font_decrease,
-      &#fr_screenreader_font_family,
-      &#fr_screenreader_font_increase,
-      &#fr_screenreader_font_reset,
-      &#fr_screenreader_highcontrast {
-        border-bottom: 0 !important;
-        font-size: 0 !important;
-        height: 30px!important;
-        padding: 0 !important;
-        width: 30px!important;
-        margin-right: 2px !important;
-        background-position: center center;
+      button {
+        &#fr_screenreader_pause {
+         display: none;
+        }
+
+        &#fr_screenreader_play {
+
+
+          &.active {
+            display: none;
+          }
+        }
+
+        &#fr_screenreader_font_decrease,
+        &#fr_screenreader_font_family,
+        &#fr_screenreader_font_increase,
+        &#fr_screenreader_font_reset,
+        &#fr_screenreader_hideimages,
+        &#fr_screenreader_highcontrast,
+        &#fr_screenreader_highcontrast2,
+        &#fr_screenreader_highcontrast3,
+        &#fr_screenreader_play,
+        &#fr_screenreader_stop {
+          border: 2px solid #fff !important;
+          border-radius: 50%;
+          font-size: 0 !important;
+          height: 30px!important;
+          padding: 0 !important;
+          position: relative;
+          width: 30px!important;
+          margin-right: 5px !important;
+          background-position: center center;
+
+          &:focus {
+            outline: 2px solid #f99b1c !important;
+          }
+        }
+      }
+
+      #fr_screenreader_play {
+        background: url("images/lautsprecher.png") no-repeat;
+        background-size: 30px;
+        z-index: 2;
+      }
+
+      #fr_screenreader_stop {
+        background: url("images/animated-gif.gif") no-repeat;
+        background-size: 30px;
+      }
+
+      #fr_screenreader_hideimages {
+        background: url("images/icon-remove-img-accessibility.png") no-repeat;
+        background-size: 30px;
+      }
+
+      #fr_screenreader_font_increase {
+        background: url("images/increase_designenergie.png") no-repeat;
+        background-size: 30px;
+        margin-left: 0;
+      }
+
+      #fr_screenreader_font_decrease {
+        background: url("images/decrease_designenergie.png") no-repeat;
+        background-size: 30px;
+      }
+
+      #fr_screenreader_font_reset {
+        background: url("images/reset_designenergie.png") no-repeat;
+        background-size: 30px;
+      }
+
+      #fr_screenreader_font_family {
+        background: url("images/dyslexic_designenergie.png") no-repeat;
+        background-size: 30px;
 
         &:focus {
           outline: 2px solid #f99b1c !important;
         }
       }
-    }
 
-    #fr_screenreader_font_increase {
-      background: url("../images/increase_designenergie.png") no-repeat;
-      background-size: 25px;
-    }
-
-    #fr_screenreader_font_decrease {
-      background: url("../images/decrease_designenergie.png") no-repeat;
-      background-size: 25px;
-    }
-
-    #fr_screenreader_font_reset {
-      background: url("../images/reset_designenergie.png") no-repeat;
-      background-size: 25px;
-    }
-
-    #fr_screenreader_font_family {
-      background: url("../images/dyslexic_designenergie.png") no-repeat;
-      background-size: 25px;
-
-      &:focus {
-        outline: 2px solid #f99b1c !important;
+      #fr_screenreader_highcontrast {
+        background: url("images/highcontrast_designenergie.png") no-repeat;
+        background-size: 30px;
       }
-    }
 
-    #fr_screenreader_highcontrast {
-      background: url("../images/highcontrast_designenergie.png") no-repeat;
-      background-size: 25px;
+      #fr_screenreader_highcontrast2 {
+        background: url("images/highcontrast2_designenergie.png") no-repeat;
+        background-size: 30px;
+      }
 
-
-    }
-
-    #fr_screenreader_highcontrast2 {
-      background: url("../images/highcontrast2_designenergie.png") no-repeat;
-      background-size: 25px;
-
-    }
-
-    #fr_screenreader_highcontrast3 {
-      background: url("../images/highcontrast3_designenergie.png") no-repeat;
-      background-size: 25px;
-
-    }
+      #fr_screenreader_highcontrast3 {
+        background: url("images/highcontrast3_designenergie.png") no-repeat;
+        background-size: 30px;
+      }
     }
   }
 }
